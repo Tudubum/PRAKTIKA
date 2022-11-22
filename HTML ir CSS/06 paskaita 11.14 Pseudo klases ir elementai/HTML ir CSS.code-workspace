@@ -1,0 +1,19 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "../../JavaScript"
+	},
+	{
+		"path": "../../JavaScriptDOM"
+	},
+	{
+		"path": "../../../UNCOMMON.LT KURSAS/web development/OCR Baltic Warriors page"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HTML ir CSS"
+  }
+}

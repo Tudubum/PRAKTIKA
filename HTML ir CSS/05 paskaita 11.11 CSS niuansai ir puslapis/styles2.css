@@ -1,0 +1,35 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+#paveldejimas > ul {
+  color: red;
+  font-size: 10px;
+  margin-left: 50px;
+  border: 3px solid black;
+
+  list-style-type: square;
+}
+
+section p {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+
+#priorities {
+  text-decoration: none;
+}
+
+.veryImportant {
+  color: red;
+  font-size: larger;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+body {
+  font-size: "Times New Roman";
+}

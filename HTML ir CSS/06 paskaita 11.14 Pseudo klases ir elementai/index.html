@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>06 paskaita 11.14 Pseudo klases ir elementai</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--
+        Pseudo klases ir elementai(selektoriai)
+        Multimedijos elementai(video, audio, maps, iframe)
+        Lenteles su pseudo klasem/elementais
+        Formos su pseudo klasem/elementais
+        Animacijos ir perejimai
+    -->
+    <main>
+      <section id="pseudoSelektoriai">
+        <h1>
+          <a
+            href="https://www.w3schools.com/csSref/css_selectors.php"
+            target="_blank"
+            >Pseudo selektoriai</a
+          >
+        </h1>
+        <ul>
+          <li>*</li>
+          <li>element</li>
+          <li>.class</li>
+          <li>#id</li>
+          <li>selector1, selector2</li>
+          <li>selector1 selector2</li>
+          <li>selector1 > selector2</li>
+          <li>
+            element.class#id - elementas turintis nurodytaklase/es ir/arba
+            nurodyta id.
+          </li>
+          <li>
+            selector1 + selector2 - is karto uz selector1 einantis
+            selektor2(tame paciame lygyje)
+          </li>
+          <li>
+            selector1 ~ selektor2 uz selector1 einantys visi selector2(tame
+            paciame lygyje)
+          </li>
+          <li>[attribute] - atributas</li>
+          <li>[attribute=value] - atributas, turintis nurodyta reiksme.</li>
+          <li>
+            [atrtibute~=value] - atributas, kurio reiksmeje yra nurodytas zodis.
+          </li>
+          <li>
+            [attribute*=value] - atributas, kurio reiksmeje yra nurodyta zodio
+            dalis.
+          </li>
+          <li>
+            [attribute|=value] - atributas, kurio reiksme yra value arba
+            value-kazkas.
+          </li>
+          <li>
+            [attribute^=value] - atributas, kurio reiksme prasideda value
+            kazkas.
+          </li>
+          <li>
+            [attribute$=value] - atributas, kurio reiksme pasibaigia ... value.
+          </li>
+          <li>:link - paprasta/nelankyta nuoroda</li>
+          <li>:visited - lankytina nuododa</li>
+          <li>:hover - uzejes kursorius ant elemento(pele)</li>
+          <li>:active - aktyvi(paspaudimo momento) nuoroda</li>
+          <li>element:empty - tuscias elementas(be content)</li>
+          <li>
+            ::marker(SVARBUS) - saraso elementu zymes(papunkciui taskeliai kaip
+            buna)
+          </li>
+          <li>:not(selector)*SVARBUS) - neparenka nurodyto elemento</li>
+          <li>:first-child - parenka pirmaji vaikini elementa</li>
+          <li>:last-child - parenka paskutiniji vaikini elementa</li>
+          <li>:only-child - parenka vieninteli vaikini elementa </li>
+          <li>:first-of-type - parenka pirmaji nurodyto tipo elementa</li>
+          <li>:last-of-type - parenka paskutiniji nurodyto tipo elementa</li>
+          <li>:only-of-type - parenka vieninteli nurdyto tipo elementa</li>
+          <li>:nth-child(n) - parenka nurodytus vaikinius elementus.</li>
+          <li>:nth-last-child(n) - parenka nuo galo nurodytus vaikinius elementus.</li>
+          <li>:nth-of-type(n) - parenka nurodytus elementus pagal tipa.</li>
+          <li>:nth-last-of-type(n) - nuo galo parenka nurodytus elementus pagal tipa.</li>
+          <li>::before - sukuria kazkoki turini pries elementa</li>
+          <i>::after - sukuria turini uz elemento</i>
+          <li>input:checked - pazymetus radio/checkbox/option pasirinikumus</li>
+          <li>input:default is anksto parinktas pasirinkimas</li>
+          <li>input:disabled - input'as, kuris turi disabled atributa</li>
+          <li>input:enable - input'as, kuris neturi disabled atributo</li>
+          <li>input:focus - input'as ant kurio yra paspausta ar kuris yra fokusuotas.</li>
+          <li>input:in-range - input'as, kurio verte yra nurodytose ribose</li>
+          <li>input:out-of-range - input'as, kurio verte yra uz nurodytu ribu</li>
+          <li>input:indeterminate - input'as, kurio reiksme yra neapibrezta(nei parinkitas, nei neparinktas(reikalingas JS siam budui))</li>
+          <li>input:invalid - input'as kurio verte yra netinkama</li>
+          <li>input:valid - input'as, kurio verte yra tinkama</li>
+          <li>input:required - input'as su required atributu</li>
+          <li>input:optional- input'as su optional atributu</li>
+          <li>input:read-only - input'as su readonly atributu</li>
+          <li>input:read-write - input'as be readonly atributu</li>
+          <li>::placeholder - ivesties laukelio placeholder atributo reiksmes parinkimas stilizavimui</li>
+          <li>::first-letter - parenka elemento pirmaja raide</li>
+          <li>::first-line - parenka elemento pirmaja eilute</li>
+          <li>:selection - parenka vartotojo pazymeta turini/informacija</li>
+          <li>:is() - naujas</li>
+          <li>:has() - naujas</li>
+          <li>:where() - naujas</li>
+          
+        </ul>
+        <div class="selektoriuPvz">
+          <p class="rytoTekstas" id="hallo">labas rytas</p>
+          <p>tekstas</p>
+          <h1>tekstas more</h1>
+          <p>tekstas more and more</p>
+          <h1 class="heading irDar">tekstas more2</h1>
+          <div>
+            <p>csddsf</p>
+          </div>
+          <p>tekstas more and more</p>
+          <p>labas rytas</p>
+          <p>tekstas more and more</p>
+          <h1>labas vakaras</h1>
+          <h1>tekstas vakariukas</h1>
+          <p>labas rytas</p>
+        </div>
+      </section>
+    </main>
+    <section id="multimedija">
+      <h1>Multimedija</h1>
+      <p>
+        Iframe - skirtas ikelti kitos svetaines dali/turini arba visa svetaine i savo svetaine.
+      </p>
+      <div id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_JPOAD1KlME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>"</iframe>
+      </div>
+      <div>
+        <div id="audio">
+            <audio controls>
+              <source src="" type="">
+              <source src="" type="">
+              <source src="" type="">
+            </audio>
+            <audio src=""></audio>
+
+          </audio>
+        </div>
+        <div id="maps">
+          <p>JavaScript prijungti</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2294.18642913596!2d23.88976!3d54.899649999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e7220f59309dfb%3A0xe582713bd48a963a!2sKauno%20pilis!5e0!3m2!1slt!2slt!4v1668415578443!5m2!1slt!2slt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        <div id="page">
+          <iframe src="https://lrs.lt/"  heightframeborder="0"></iframe>
+
+        </div>
+      
+     <div class="table">
+        <table>
+          <caption> Artimiausios varzybos</caption>
+          <thead>
+            <tr>
+              <th>Eil.Nr.</th>
+              <th>Varžybų pavadinimas</th>
+              <th>Data</th>
+              <th>Miestas/Šalis</th>
+              <th>Daugiau info</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>WARSZAWA WINTER RUNMAGEDDON</td>
+                <td>2023 m. vasario 5-6 d.</td>
+                <td>Varšuva/Lenkija</td>
+                <td>
+                  <a href="https://www.runmageddon.com/events"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>SPARTAN RACE</td>
+                <td>2023 m. balandžio 02 d.</td>
+                <td>Palma Maljorka/Ispanija</td>
+                <td>
+                  <a
+                    href="https://es.spartan.com/en/race/detail/7610/overview?index=1"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>OCR Lithuania</td>
+                <td>2023 m. gegužės 27 d.</td>
+                <td>Šiauliai/Lietuva</td>
+                <td>
+                  <a href="https://www.facebook.com/OCRLithuania/"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ALFA RUN 2023</td>
+                <td>2023 m. birželio 17 d.</td>
+                <td>Marijampolis/Lietuva</td>
+                <td>
+                  <a href="https://www.alfarun.lt/">Oficialus puslapis</a>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+     </div> 
+      
+      
+        </div>
+    </section>
+  </body>
+</html>

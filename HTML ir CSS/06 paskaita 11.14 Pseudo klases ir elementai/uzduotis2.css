@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  width: 100%;
+  height: 40px;
+}
+.navbar a {
+  float: right;
+  color: grey;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: rgb(0, 166, 255);
+}
+
+.video {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 240px;
+  background: rgb(34, 32, 32);
+  padding: 6px 14px;
+  color: white;
+}
+
+.list {
+  padding: 15px;
+  font-size: 18px;
+}
+
+.name li {
+  padding: 5px;
+  font-size: 14px;
+}

@@ -1,0 +1,128 @@
+body {
+  height: 600vh;
+}
+h2 {
+  color: red;
+  letter-spacing: 5px;
+}
+
+.svarbusTekstas {
+  font-size: larger;
+  font-style: italic;
+  font-weight: bold;
+}
+.raudonasTekstas {
+  color: red;
+}
+
+#remeliai {
+  border: 3px dashed lightcoral;
+}
+#melynasTekstas {
+  color: blue;
+}
+
+.kvadratas {
+  width: 150px;
+  height: 150px;
+  background-color: beige;
+  border: 2px solid black;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.linijinis {
+  display: inline;
+}
+
+.blokinis {
+  display: block;
+}
+
+.linijinisblokinis {
+  display: inline-block;
+}
+
+.staciakampis {
+  width: 250px;
+  height: 60px;
+  background-color: yellow;
+  font-size: 0;
+}
+
+.staciakampis2 {
+  width: 250px;
+  height: 60px;
+  background-color: green;
+  font-size: 0;
+}
+
+.staciakampis3 {
+  width: 250px;
+  height: 60px;
+  background-color: red;
+  font-size: 0;
+}
+
+.italija1 {
+  width: 90px;
+  height: 400px;
+  background-color: green;
+  font-size: 0;
+}
+
+.italija2 {
+  width: 90px;
+  height: 400px;
+  background-color: blue;
+  font-size: 0;
+}
+
+.italija3 {
+  width: 90px;
+  height: 400px;
+  background-color: red;
+  font-size: 0;
+}
+
+.h500 {
+  height: 500px;
+}
+.t10 {
+  top: 10px;
+}
+.r30 {
+  right: 30px;
+}
+.b50 {
+  bottom: 50px;
+}
+.l80 {
+  left: 80px;
+}
+
+.z5 {
+  z-index: 5;
+}
+
+.z10 {
+  z-index: 10;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.sticky {
+  position: sticky;
+}

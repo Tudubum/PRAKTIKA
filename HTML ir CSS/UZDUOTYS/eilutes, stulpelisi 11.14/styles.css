@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+  font-size: 42px;
+}
+
+body {
+  background-color: rgb(31, 31, 65);
+}
+
+.image-premier {
+  text-align: center;
+}
+.image-premier img {
+  width: 450px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+h3 {
+  text-align: center;
+  color: rgb(252, 127, 148);
+  font-size: 22px;
+}
+
+li {
+  display: inline-block;
+}
+.thead {
+  font-size: 16px;
+  color: white;
+}
+
+th,
+td {
+  padding: 10px 15px;
+  font-size: 26px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  color: white;
+}
+
+#stats {
+  box-sizing: border-box;
+  padding-top: 50px;
+  width: 100%;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+table {
+  width: 85%;
+  align-content: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+table tbody {
+  background: rgba(128, 128, 128, 0.284);
+}
+th:nth-child(1) {
+  color: rgb(255, 118, 141);
+}
+
+/*Hover tik vienam elementui*/
+td:hover:nth-child(1) {
+  color: green;
+  text-align: center;
+  background-color: white;
+}
+
+/*Hover visai eilutei*/
+tr:hover:nth-of-type(1n + 1) {
+  color: rgb(0, 0, 0);
+  background: rgba(207, 31, 137, 0.332);
+}

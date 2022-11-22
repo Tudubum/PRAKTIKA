@@ -1,0 +1,77 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+#greenoffice {
+  background-color: rgb(174, 222, 18);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar img {
+  width: 150px;
+  height: 100px;
+  margin: 5px 0 50px 40px;
+  justify-content: flex-start;
+}
+
+.navbar li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 40px;
+  font-size: 26px;
+}
+.navbar ul {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstContainer {
+  width: 40%;
+  margin-left: 40px;
+  text-align: justify;
+}
+
+button {
+  display: flex;
+  background-color: rgb(174, 222, 18);
+  color: white;
+  border: none;
+  padding: 10px;
+  float: right;
+}
+
+.secondContainer {
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 20px;
+  margin-right: 30px;
+  text-align: justify;
+}
+
+.secondContainer img {
+  display: flex;
+  width: 60%;
+  float: left;
+  padding: 0 20px 0 0;
+}
+
+.copyright_footer {
+  position: relative;
+  color: #27570b;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  background-color: #dfdfdf;
+  line-height: 30px;
+  text-align: center;
+  left: 0;
+  margin-top: 20px;
+}

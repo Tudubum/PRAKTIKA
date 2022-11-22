@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2 paskaita - HTML įvadas</title>
+    <link rel="icon" href="images/done.png" />
+  </head>
+  <body>
+    <div>
+      <!--stilizavimo tag'ai viduje-->
+      <!-- kas bus siame konteinerye-->
+      <h1>Stilizavimo tag'ai</h1>
+      <ul>
+        <li>b- bold - pastorina teksta</li>
+        <li>strong - pastorina teskta</li>
+        <li>i- italic - suteiia tekstui pasvirima</li>
+        <li>em - emphasize - suteikia tekstui pasvyrimo</li>
+        <li>
+          sup - super - pakelia teksta i virsu ir ji sumazina(atrodo kaip
+          kvadratu)
+        </li>
+        <li>
+          sub - nuleidzia teksta i apacia ir ji sumazina(atrodo kaip kvadratu)
+        </li>
+        <li>
+          span - isskiria kazkoki elementa ar jo dali, bet be stiliu (kaip ir
+          visi linijiniai tagai)
+        </li>
+      </ul>
+      <p>
+        Lorem <b>ipsum</b> dolor <strong>sit</strong> amet consectetur
+        adipisicing elit. <em>Eaque</em> facilis <i>doloribus</i> tempora
+        assumenda nesciunt consectetur deleniti, nisi harum rem, sint nulla
+        cumque, veritatis labore doloremque ab temporibus accusantium sed
+        quibusdam!
+      </p>
+    </div>
+    <div>
+      <!-- Lenteles-->
+      <h1>Lenteles</h1>
+      <ul>
+        <li>li - lentele</li>
+        <li>thead - table head - lenteles virsus</li>
+        <li>tbody - table body - lenteles kunas</li>
+        <li>tfoot - table foot - lenteles apacia</li>
+        <li>tr - table row - lenteles eilute</li>
+        <li>th - table heading - lenteles antrastes (stulpelio) pavadinimas</li>
+        <li>td - table data - lenteles duomuo</li>
+        <li>
+          caption - visos lenteles pavadinimas, galima kontrololiuoti puses
+          lengvai
+        </li>
+        <li>colgroup - column grooup - stulpeliu grupes</li>
+        <li>col - column - stulpelis</li>
+      </ul>
+      <table border>
+        <caption>
+          Artimiausios varžybos, kuriose dalyvaus mūsų komandos nariai:
+        </caption>
+        <colgroup> <!-- nenaudingas tagas, nenaudojamas realiai-->
+        <col span"3" style="background-color: rgb(214,225,148);">
+        <col>
+        <col>
+        <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Vardas</th>
+                <th>Amzius
+                </th>
+                <th>Ugis</th>
+                <th>Plauku spalva</th>
+                <th>Akiu spalva</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rokas</td>
+            <td>26</td>
+            <td>186</td>
+            <td>ruda</td>
+            <td>melyna</td>
+          </tr>
+          <tr>
+            <td>Petras</td>
+            <td>99</td>
+            <td rowspan="2">150</td>
+            <td>orandzine</td>
+            <td>ruda</td>
+          </tr>
+          <tr>
+            <td>Jonas</td>
+            <td>55</td>
+            <td colspan="2">melyna</td>
+          </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Bendras destytoju kiekis:</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+      </table border>
+    </div>
+    <div> <!-- formos-->
+        <h1>Formos</h1>
+        <h3>Tag'ai</h3>
+        <ul>
+            <li>form - forma</li>
+            <li>input - ivestis</li>
+            <li>select - pasirinkimas is variantu</li>
+            <li>option - pasirinkimo variantai</li>
+            <li>textarea - didelio teksto kiekio ivestis</li>
+            <li>label - etikete prie kazkokios ivesties/pasirinkimo</li>
+            <li>optgroup - pasirinkimo variantu grupe</li>
+            <li>button - mygtukas</li>
+            <li>fieldset - formos laukas</li>
+            <li>legend - formos lauko pavadinimas</li>
+
+
+        </ul>
+        <h3>Atributai</h3>
+        <ul>
+            <li>type - Input tag'o tipas</li>
+            <li>for nurodo kuriam ivesties/parinkties laukui yra priskirta etikete</li>
+            <li>id - unikalus pavadinimas i kuri nurodo for atributas</li>
+            <li>name - įvesties lauko vardas, kuris bus perduotas back'ui kartu su tos įvesties reikšme</li>
+            <li>cols - stulpeliu kiekis textarea elemente</li>
+            <li>rows - eiluciu kiekis textarea elemente</li>
+            <li>placeholder - tekstas nusakantis ka rasyti ivesties lauke, kuris dingsta pradedant rasyti</li>
+            <li>value - ivesties reiksme, kuri perduodama i back'enda</li>
+            <li>label - priskiria colgroup'ui pavadinima</li>
+            <li>selected - numatytasis select tag'o viduje esantis pasirinkimo variantas</li>
+            <li>minlength - trumpiausia galima ivestis</li>
+            <li>maxlength - ilgiausia galima ivestis</li>
+            <li>step - zingsnis, kuriuo dideja/mazeja skaicius(desimtoji ar simtoji skaiciaus)</li>
+            <li>pattern - formatas nurodomas regex(regular expression)</li>
+            <li>checked - numatytasis radio arba checkbox pasirinkimas</li>
+        </ul>
+        <form>
+            <div>
+                <h4>Pasirinkite pomegi</h4>
+            <div>
+                <label for="sportas">Sportas</label>
+                <input type="radio" name="pomegis" id="sportas" value="sportas">
+            </div>
+            <div>
+                <label for="filmai">Filmai</label>
+                <input type="radio" name="pomegis" id="filmai" value="filmai">
+            </div>
+            <div>
+                <label for="kulinarija">Kulinarija</label>
+                <input type="radio" name="pomegis" id="kulinarija" value="kulinarija">
+                </div>
+            </div>
+            
+            
+<!-- nr.2 PRAKTINIS DARBAS FORMOS UZDUOTIS-->
+<html>
+    <h2>VARTOTOJO FORMA</h2>
+    <form id="formosUzduotis"> 
+        <div>
+            <label for="name">Vardas:</label>
+            <input type="text" name="name" id="name" required> 
+        </div> 
+        <div>
+            <label for="email">El.paštas:</label>
+            <input type="email" name="email" id="email" required> 
+        </div> 
+        <div>
+            <label for="password">Slaptažodis:</label>
+            <input type="password" name="password" id="password" required > 
+        </div> 
+        <div>
+            <span>Pasirinkite savo lytį:</span>
+            <div>
+                <label for="vyras">Vyras</label>
+                <input type="radio" name="gender" id=vyras value="vyras">
+            </div>
+            <div>
+                <label for="moteris">Moteris</label>
+                <input type="radio" name="gender" id=moteris value="moteris">
+            </div>
+        </div>
+        <div>
+            <textarea placeholder="Čia galite palikti savo komentarą..." cols="30" rows="10" required></textarea>
+        </div> 
+            <input type="submit" value="Pateikti"> 
+    </form>
+    </div>
+        <script>
+        document // kreipiuosi i dokumenta
+        .querySelector('#formosUzduotis') // pasirenku elementa su ID
+        .addEventListener('submit',(event)=> { // laukia "submit" ivykio ir vykdo bevarde funkcija
+            event.preventDefault(); // neleidzia formai buti sunciamai i serveri
+            console.log(event); // i konsole isveda formos informacija
+            event.target.reset();// isvalo forma
+        } );
+        </script>
+</html>
+
+
+
+

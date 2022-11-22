@@ -1,0 +1,484 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+.nuotrauka {
+  width: 100%;
+  height: 500px;
+  background-image: url(https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1622&q=80);
+  background-size: cover;
+  background-position: 75% 30%;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.bgblack {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.226);
+  z-index: 1;
+  justify-content: space-around;
+}
+
+.bars {
+  margin-top: 20px;
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 60px;
+}
+.logo img {
+  justify-content: flex-start;
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+}
+
+.bars > * {
+  padding: 15px;
+}
+
+/*What we do*/
+
+.maincontainer {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(234, 233, 233);
+}
+
+.maincontainer .box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  height: 250px;
+  width: 300px;
+  background: white;
+  margin: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.bi-lightbulb {
+  color: rgb(111, 209, 111);
+  font-size: 26px;
+}
+
+.bi-cash {
+  color: rgb(111, 209, 111);
+  font-size: 46px;
+}
+
+.bi-megaphone {
+  color: rgb(111, 209, 111);
+  font-size: 26px;
+}
+
+.bi-pencil {
+  color: rgb(111, 209, 111);
+  font-size: 26px;
+}
+
+#WhatWeDo {
+  background-color: rgb(234, 233, 233);
+  padding-top: 60px;
+}
+
+#WhatWeDo h1 {
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+#WhatWeDo h3 {
+  color: black;
+}
+
+#WhatWeDo hr {
+  width: 90px;
+  background-color: black;
+  height: 2px;
+  border: none;
+}
+
+/* OFFER SU GRID*/
+
+#offer {
+  height: 500px;
+  background-image: url(https://wallpapercave.com/wp/wp2476778.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.offerbg2 {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.TextContainer {
+  width: 600px;
+  height: 350px;
+  color: white;
+  padding-right: 30px;
+}
+
+.btn :nth-child(1) {
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+.btn :nth-child(2) {
+  background-color: rgb(111, 209, 111);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 12px;
+}
+
+.GridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr 2fr;
+  width: 600px;
+  height: 350px;
+  margin-top: 60px;
+}
+
+.img1 {
+  background-image: url(https://i.pinimg.com/originals/66/be/79/66be7922881ea8c3bcb1bd40ba12a797.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: 2 / 1 / 4 / 4;
+  z-index: 1;
+}
+
+.img2 {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/372/480/843/landscape-morning-sun-sunrise-wallpaper-preview.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: 1 / 2 / 3 / 5;
+}
+
+.img3 {
+  background-image: url(https://wallpaper.dog/large/20500242.jpg);
+  background-size: cover;
+  background-position: center;
+  grid-area: 3 / 3 / 5 / 6;
+}
+/* PORFOLIO DALIS*/
+
+#porfolio {
+  margin-top: 60px;
+  width: 100%;
+}
+#porfolio h1 {
+  text-align: center;
+}
+
+#porfolio hr {
+  width: 90px;
+  background-color: black;
+  height: 2px;
+  border: none;
+}
+.text ul {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.text span {
+  color: rgb(111, 209, 111);
+}
+
+.text li {
+  display: flex;
+  list-style: none;
+  margin: 15px;
+}
+
+#photography {
+  padding-bottom: 60px;
+}
+.photography {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin: 5px;
+}
+
+/* BLOG */
+
+#blog {
+  background-color: #21325e;
+  padding-top: 40px;
+}
+.blogpost {
+  display: flex;
+  gap: 1px;
+  justify-content: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+/*.food {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 600px;*/
+
+.food {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 600px;
+  height: 400px;
+  background-image: url("https://wallpapercave.com/wp/wp3185319.jpg");
+  background-size: cover;
+  background-position: inherit;
+  margin-right: 20px;
+}
+
+.blacktext {
+  background-color: black;
+  z-index: 1;
+  height: 70px;
+  width: 600px;
+  opacity: 0.7;
+  padding-top: 5px 0 5px 10px;
+  padding-left: 20px;
+}
+
+.blacktextarea {
+  padding-top: 15px;
+}
+
+.blacktextarea h3,
+.blacktext p {
+  margin: 0;
+  color: white;
+}
+
+.blacktextarea p span {
+  font-weight: 1000;
+  color: white;
+}
+
+.blacktextarea p {
+  font-weight: 100;
+}
+.foodContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex1 {
+  display: flex;
+  align-items: flex-end;
+  width: 600px;
+  height: 190px;
+  background-image: url(https://www.lrt.lt/img/2021/12/22/1161003-223153-756x425.jpg);
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.flex2 {
+  display: flex;
+  align-items: flex-end;
+  width: 600px;
+  height: 190px;
+  background-image: url(https://w0.peakpx.com/wallpaper/45/979/HD-wallpaper-phases-of-moon-phases-moon-cg-of.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#blog h1 {
+  color: white;
+  text-align: center;
+}
+
+#blog hr {
+  width: 90px;
+}
+
+/*Statistika*/
+
+.statboxes {
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.box {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  background-color: rgb(234, 233, 233);
+  margin-right: 10px;
+  color: grey;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.box h3 {
+  color: rgb(111, 209, 111);
+}
+
+/*Contact Us*/
+
+.ContactUs h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.ContactUs hr {
+  width: 90px;
+  color: rgb(255, 255, 255);
+}
+
+.ContactUs {
+  background-image: url(https://media.istockphoto.com/id/1362967310/photo/international-space-station-in-2022-in-outer-space-iss-floating-on-orbit-of-earth-planet.jpg?b=1&s=170667a&w=0&k=20&c=djmrRCptWN8ynna9M0bh7yj97-dQLX9DRGvC-J509pI=);
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+}
+
+.Contactusbg {
+  background-color: black;
+  opacity: 0.7;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.ContactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.map iframe {
+  width: 600px;
+  height: 300px;
+  margin-right: 20px;
+}
+
+.name,
+.email {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: ;
+}
+/*.inputs > * {
+  width: 100%;
+  margin-bottom: 20px;
+}*/
+
+.form {
+  width: 600px;
+  height: 300px;
+}
+
+.button {
+  background: rgb(111, 209, 111);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 10px 20px 10px 20px;
+  margin-top: 10px;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  padding-top: 10px;
+  height: 30px;
+  padding-bottom: 15px;
+}
+
+.copyright {
+  width: 100%;
+  padding-top: 10px;
+  padding-left: 110px;
+  align-content: center;
+}
+
+.socialicons {
+  width: 100%;
+  text-align: right;
+  padding-right: 110px;
+}
+.socialicons > * {
+  text-decoration: none;
+}
+
+.footer span {
+  color: red;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: rgb(111, 209, 111);
+  color: rgb(0, 0, 0);
+}
+
+.fa-twitter {
+  background: rgb(111, 209, 111);
+  color: rgb(0, 0, 0);
+}
+
+.fa-linkedin {
+  background: rgb(111, 209, 111);
+  color: rgb(0, 0, 0);
+}
+
+.fa-rss {
+  background: rgb(111, 209, 111);
+  color: rgb(0, 0, 0);
+}
+
+.fa-dribbble {
+  background: rgb(111, 209, 111);
+  color: rgb(0, 0, 0);
+}

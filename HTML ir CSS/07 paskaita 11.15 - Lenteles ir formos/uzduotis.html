@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fancy form</title>
+    <link rel="stylesheet" href="uzduotis.css" />
+  </head>
+  <body>
+    <main>
+      <section id="registerForm">
+        <div class="formContainer">
+          <h1>Register to Fancy Form</h1>
+          <h5>
+            All fields are <span class="span1">required</span> unless marked as
+            "optional"
+          </h5>
+          <form>
+            <div class="allInputs">
+              <div>
+                <label for="name">Your unique ID that you can't change</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="YBX0123"
+                  readonly
+                />
+              </div>
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div>
+                <label for="passw">Password:</label>
+                <input
+                  type="password"
+                  name="passw"
+                  id="passw"
+                  minlength="6"
+                  maxlength="24"
+                  required
+                />
+              </div>
+              <div>
+                <label for="age">Age:</label>
+                <input
+                  type="number"
+                  min="18"
+                  max="65"
+                  value="18"
+                  id="age"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <label for="textarea"
+                >Tell us a little about yourself(optional):</label
+              >
+              <textarea
+                name="textarea"
+                id="textarea"
+                value="textarea"
+              ></textarea>
+            </div>
+            <label>
+              <input type="checkbox" name="termsShkbx" required />
+              <span> I agree with Terms & Conditions</span>
+            </label>
+            <button>Register</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

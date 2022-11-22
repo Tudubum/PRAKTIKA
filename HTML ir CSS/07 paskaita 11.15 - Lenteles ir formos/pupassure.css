@@ -1,0 +1,37 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+.window {
+  background-color: pink;
+  overflow: hidden;
+  position: relative;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 300px;
+  background-color: rgb(69, 54, 54);
+}
+
+.window main {
+  margin-left: 340px;
+  position: relative;
+  background-color: pink;
+  margin-bottom: 100px;
+}
+
+#Pet-form {
+  margin: 0 auto;
+}
+
+h1 {
+  padding: 15px 30px;
+}
+
+.allInputs {
+  display: block;
+  position: relative;
+}

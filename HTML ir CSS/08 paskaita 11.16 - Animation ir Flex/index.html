@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>08 paskaita - Animation ir Flex</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!--
+        transform
+        transition
+        animation
+
+        flex
+    -->
+    <main>
+      <section id="transform">
+        <h1>Transform</h1>
+        <ul>
+          <li>scale - keicia elemento dydi (default 1)</li>
+          <li>scaleX(x), scaleY(y), scaleZ(x), scale(x,y), scale3d(x,y,z)</li>
+          <li>
+            rotate - pasuka elementa aplink asi(deg), kuria reikia nurodyti
+          </li>
+          <li>rotate(x), rotate(y), rotate(z), rotate(), rotate3d(x,y,x,a)</li>
+          <li>translate - pastumti elemeta</li>
+          <li>
+            translateX(x), transalteY(y), translateZ(z), translate(x,y),
+            translate3d(x,y,z)
+          </li>
+          <li>skew - tempia elementa uz kampu(deg)</li>
+          <li>skew - skewX(x), skewY(y), skew(x,y)</li>
+          <li>matrix, matrix 3d</li>
+          <li>perspective</li>
+        </ul>
+        <div class="kvadaratasDidelis scale">scale</div>
+        <div class="kvadaratasDidelis2 rotate">rotate</div>
+        <div class="kvadaratasDidelis3 translate">translate</div>
+        <div class="kvadaratasDidelis4 skew">skew</div>
+        <div class="kvadaratasDidelis5 transformation">transformation</div>
+      </section>
+      <section id="transition">
+        <h1>Tranzicija</h1>
+        <ul>
+          <li>transition-property- kokir stiliai keiciasi</li>
+          <li>transitio-duration - per kiek laiko ivyksta pasikeitimai</li>
+          <li>
+            transition-timing-function - kaip tranzicijai paskirstys turima
+            laika
+            <ul>
+              <li>ease</li>
+              <li>ease-in</li>
+              <li>ease-out</li>
+              <li>ease-in-out</li>
+              <li>linear</li>
+              <li>cubiz-bezier</li>
+            </ul>
+          </li>
+          <li>transition-delay - po kiek laiko pradeda vykti pakitimai</li>
+          <li>transition - junginys visu 4 nustatymu</li>
+        </ul>
+      </section>
+      <section id="animation">
+        <h1>Animacija</h1>
+        <ul>
+          <li>animation-duraction - animacijai skirtas laiko tarpas</li>
+          <li>
+            animation-timing-function - kaio animacijai paskirstys turima laika
+          </li>
+          <li>animation-delay - po kiek laiko prasides animacija</li>
+          <li>animation-interation-count - kiek sykiu vyks animazija</li>
+          <li>animation-direction - animacijos kryptis</li>
+          <li>animation-fill-mode - animacijos pradzios/pabaigos nusttaymai</li>
+          <li>animation-play-state - animacijos busena</li>
+          <li>animation-name - animacijos pavadinimas</li>
+          <li>animation - junginys visu 8 nustatymu</li>
+        </ul>
+        <p></p>
+        <div class="kvadratasDidelis6 tranzicija transformation">
+          tranzicija
+        </div>
+        <div class="kvadratasDidelis7 animacija">animacija</div>
+      </section>
+      <section class="Flex">
+        <h1>Display: flex</h1>
+        <ul>
+          <li>flex-direction(by deflaut - row)</li>
+          <li>flex-wrap</li>
+          <li>flex-flow - tai flex-direction ir flex-wrap junginys</li>
+          <li>
+            justify-content - main axis(lygiuoja main dalyje, jiegy keiciu
+            flex-direction tai ir lygiavimas pasikeicia)
+          </li>
+          <li>
+            align-items - cross axis(dar tarpus tarp eiluciu jeigu turinys
+            netelpa i viena)
+          </li>
+          <li>
+            align-content - cross axis(nedaro tarpu netelpant turiniui i viena
+            eilute)
+          </li>
+          <li>gap, row-gap, column-gap</li>
+          <li>order</li>
+          <li>flex-grow</li>
+          <li>align-self</li>
+        </ul>
+        <div class="flexContainer">
+          <div class="kvadratas">1</div>
+          <div class="kvadratas">2</div>
+          <div class="kvadratas order2">3</div>
+          <div class="kvadratas">4</div>
+          <div class="kvadratas">5</div>
+          <div class="kvadratas">6</div>
+          <div class="kvadratas">7</div>
+          <div class="kvadratas">8</div>
+          <div class="kvadratas">9</div>
+          <div class="kvadratas alignSelfEnd">10</div>
+          <div class="kvadratas">11</div>
+          <div class="kvadratas">11</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

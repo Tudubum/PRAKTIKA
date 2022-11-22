@@ -1,0 +1,97 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+.formContainer {
+  width: 30%;
+  background-color: rgb(27, 58, 70);
+  padding: 30px 25px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+h1,
+h5 {
+  color: white;
+}
+.span1 {
+  background-color: rgb(228, 123, 141);
+}
+
+label {
+  display: block;
+  color: white;
+  margin: 0 auto;
+}
+
+.checkboxContent {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background-color: green;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+label {
+  padding: 8px 8px 0 8px;
+}
+
+input[type="text"] {
+  background-color: rgb(195, 191, 191);
+  border: 2px solid grey;
+}
+
+/*
+input[type="email"] {
+  border: 2px solid red;
+}
+
+input[type="password"] {
+  border: 2px solid red;
+}
+input[type="age"] {
+  border: 2px solid red;
+}
+
+*/
+
+textarea {
+  border: 3px solid rgb(88, 219, 88);
+}
+
+::placeholder {
+  color: black;
+}
+
+.checkboxContent ::checkbox {
+  color: blue;
+}
+
+input:valid {
+  border: 3px solid rgb(88, 219, 88);
+}
+input:invalid {
+  border: 3px solid red;
+}
+
+input[type="checkbox"]:checked + span {
+  color: rgb(0, 98, 255);
+}
+
+button:hover {
+  background-color: rgb(45, 0, 100);
+}
+
+input:out-of-range {
+  border: 3px solid red;
+}
+
+input:in-range {
+  border: 3px solid rgb(88, 219, 88);
+}

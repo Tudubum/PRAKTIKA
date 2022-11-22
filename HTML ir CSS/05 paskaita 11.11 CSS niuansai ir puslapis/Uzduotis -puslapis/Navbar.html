@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OCR Baltic Warriors</title>
+    <link rel="stylesheet" href="navbarstyles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <div class="logo">
+    <a href="#"
+      ><img
+        src="../Uzduotis -puslapis/images/ocrlogo.png"
+        style="width: 150px; height: 100px"
+    /></a>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#">Pradinis</a></li>
+      <li><a href="#">Komanda</a></li>
+      <li><a href="#">Statistika</a></li>
+      <li><a href="#">Kontaktai</a></li>
+    </ul>
+  </nav>
+  <body>
+    <main>
+      <section class="hero">
+        <div class="hero-background">
+          <div class="hero-text">
+            <h1>OCR BALTIC WARRIORS</h1>
+            <h5>Ekstremalaus bėgimo su kliūtimis komanda</h5>
+            <button type="button" class="hero-button" onclick="#">
+              Tapti komandos nariu
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="main">
+          <img src="images/Komanda.jpeg" />
+          <div class="about-text">
+            <h1>Apie mus</h1>
+            <p>
+              OCR Baltic Warriors, tai komanda vienijanti ekstremalaus bėgimo
+              mylėtojus. Organizuodami keliones ne tik į Lietuvoje vykstančias
+              varžybas, bet ir į užsienio šalis stengiamės pupuliarinti šį
+              sportą, bei atstovauti savo šalį. Taip pat organizuojame bendras
+              treniruotes ir įvairias pramogas aktyvaus gyvenimo mėgėjams.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="statistics">
+        <div class="table">
+          <table>
+            <caption>
+              Artimiausios varžybos, kuriose dalyvaus mūsų komandos nariai:
+            </caption>
+            <thead>
+              <tr>
+                <th>Eil.Nr.</th>
+                <th>Varžybų pavadinimas</th>
+                <th>Data</th>
+                <th>Miestas/Šalis</th>
+                <th>Daugiau info</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>WARSZAWA WINTER RUNMAGEDDON</td>
+                <td>2023 m. vasario 5-6 d.</td>
+                <td>Varšuva/Lenkija</td>
+                <td>
+                  <a href="https://www.runmageddon.com/events"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>SPARTAN RACE</td>
+                <td>2023 m. balandžio 02 d.</td>
+                <td>Palma Maljorka/Ispanija</td>
+                <td>
+                  <a
+                    href="https://es.spartan.com/en/race/detail/7610/overview?index=1"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>OCR Lithuania</td>
+                <td>2023 m. gegužės 27 d.</td>
+                <td>Šiauliai/Lietuva</td>
+                <td>
+                  <a href="https://www.facebook.com/OCRLithuania/"
+                    >Oficialus puslapis</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>ALFA RUN 2023</td>
+                <td>2023 m. birželio 17 d.</td>
+                <td>Marijampolis/Lietuva</td>
+                <td>
+                  <a href="https://www.alfarun.lt/">Oficialus puslapis</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div class="contact-info">
+            <div class="card">
+                <i class="card-icon far fa-envelope"></i>
+                <p>ocrbalticwarriors@gmail.com</p>
+            </div>
+            <div class="card">
+                <i class="card-icon fas fa-phone"></i>
+                <p>+37068206891</p>
+            </div>
+            <div class="card">
+                <i class="card-icon fas fa-map-marker-alt"></i>
+                <p>Tujų g. 3, Piliuona, Kauno r.</p>
+            </div>
+        </div>
+    </section>
+      <div class="regform">
+        <div class="title">
+            <h2>Naujo nario registracijos forma</h2>
+        </div>
+        <div class="form">
+            <div class="input">
+                <label>Vardas</label>
+                <input type="text" class="input" required>
+                <label>Pavardė</label>
+                <input type="text" class="input" required>
+            </div>
+            <div class="input">
+                <label>Elektroninis paštas</label>
+                <input type="email" class="input" required>
+            </div>
+            <div class="input">
+                <label>Telefono numeris</label>
+                <input type="tel" class="input" required>
+            </div>
+            <div class="input">
+                <label>Miestas</label>
+                <input type="text" class="input" required>
+            </div>
+            <div>
+                <span>Ar esate dalyvavę OCR varžybose?</span>
+                <div>
+                    <label for="taip">Taip</label required>
+                    <input type="radio" name="taip" id=taip value="taip" required>
+                </div>
+                <div>
+                    <label for="ne">Ne</label required>
+                    <input type="radio" name="ne" id=ne value="ne" required>
+                </div>
+            </div>
+            <div>
+                <textarea placeholder="Kodėl norite prisijungti prie komandos?" cols="30" rows="10" required></textarea>
+            </div> 
+                <input type="submit" value="Pateikti"> 
+        </div>
+      </div>
+      <div class="site-container">
+        <div class="article-container">
+            <article card="article-card">
+            <figure class="article-image">
+                <img src="https://www.balticwarriors.lt/wp-content/uploads/2022/08/SRF-logo_RGB_pagrindinis-01-scaled-1-360x240.jpg" alt="fondas">
+            </figure>
+            <div class="article-conttent">
+                <a href="#" class="card-catregory">Sporto rėmimo fondas</a>
+                <h3 class="card-title">OCR Baltic Warriors rengiamos varžybos</h3>
+                <p class="card-excerpt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum adipisci quis odio quo obcaecati? Commodi libero nulla itaque odit cumque amet qui? Est aliquid culpa, sequi ducimus officia ipsam inventore!
+                </p>
+            </div>
+        </div>
+      </div>
+     <!-- <form id="comment-box">
+        <h2>Naujo nario forma</h2>
+        <div>
+        <label for="name">Vardas</label>
+        <input type="text" name="name" id="name" required></div>
+        <div>
+            <label for="surname">Pavardė</label>
+            <input type="text" name="surname" id="surname" required></div>
+        <div>
+            <label for="email">El.paštas</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="phone">Telefono numeris</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></div>
+        <div>
+        <div>
+            <label for="city">Miestas</label>
+            <input type="text" name="city" id="city" required></div>
+
+        <div>
+            <textarea placeholder="Kodėl norite tapti komandos nariu?" cols="30" rows="10" required></textarea>
+        </div>
+        <button type="submit">Pateikti</button>
+        </form>-->
+    
+      </div>
+    </main>
+    <footer>
+        <div class="copyright_footer">Visos teisės saugomos © 2022 OCR BALTIC WARRIORS
+        </div>
+    </footer>
+  </body>
+</html>

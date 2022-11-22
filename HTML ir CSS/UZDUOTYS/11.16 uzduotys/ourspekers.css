@@ -1,0 +1,75 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+#speakers {
+  width: 60%;
+  margin: 0px auto;
+}
+.mainContainer {
+  display: flex;
+  width: 900px;
+  margin: 0px auto;
+  background-color: #06283d;
+}
+.titleContainer h1 {
+  font-size: 48px;
+  color: #9ed5c5;
+  margin: 30px 20px 5px 30px;
+}
+.titleContainer h4 {
+  font-size: 26px;
+  color: rgb(255, 255, 255);
+  padding: 5px 20px 60px 30px;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.mainContainer h3 {
+  font-size: 36px;
+  flex-wrap: wrap;
+}
+
+/*.firstContainer {
+  width: 30%;
+} */
+
+.firstContainer {
+  margin-right: 10px;
+  padding-bottom: 5px;
+}
+.firstContainer img {
+  width: 200px;
+  height: 250px;
+}
+
+.secondContainer {
+  padding-bottom: 5px;
+  margin-right: 10px;
+}
+.secondContainer img {
+  width: 200px;
+  height: 250px;
+}
+
+.thirdContainer img {
+  width: 200px;
+  height: 250px;
+}
+
+.thirdContainer {
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  padding-top: 5px;
+}
+
+h5 {
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  font-weight: 100;
+}

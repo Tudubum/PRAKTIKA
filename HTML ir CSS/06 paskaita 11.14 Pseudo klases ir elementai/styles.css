@@ -1,0 +1,77 @@
+p.rytoTekstas#hallo {
+  font-weight: bold;
+}
+
+.rytoTekstas + p {
+  color: red;
+}
+
+.heading ~ * {
+  background-color: aqua;
+}
+/*}
+[href] {
+  color: orange;
+}
+*/
+
+[class="heading"] {
+  color: blue;
+}
+
+[class$="head"][color: blue;] a:active {
+  background-color: black;
+}
+
+a:link {
+  background-color: yellow;
+}
+
+a:visited {
+  background-color: blueviolet;
+}
+
+a:hover {
+  background-color: green;
+}
+
+a:active {
+  background-color: black;
+}
+
+::marker {
+  color: orange;
+}
+div > :not(div) {
+  background-color: blanchedalmond;
+}
+
+.selektoriuPvz > :not(div) {
+  background-color: burlywood;
+}
+
+.selektoriuPvz p:last-child {
+  color: green;
+}
+
+thead {
+  background-color: pink;
+}
+
+tbody td:nth-last-child{
+  background-color: blue:
+}
+
+tbody td:nth-of-type(2n){
+background-color: red;
+}
+
+li::marker{
+  color: red;
+}
+
+li::before{
+  content: ":)";
+  color: black;
+  font-size: 30px;
+}

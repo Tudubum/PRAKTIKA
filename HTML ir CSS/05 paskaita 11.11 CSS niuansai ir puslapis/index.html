@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS niuansai</title>
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="styles2.css" />
+  </head>
+  <body>
+    <!--
+    CSS paveldejimas
+    Default stiliai
+    CSS prioritetai
+    Reset/Normalize CSS
+    Google Fonts
+    Icons
+    -->
+    <main>
+      <section id="vaikinisTevinis">
+        <h1>Vaikinis / Tevinis elementas</h1>
+        <p>
+          Tevinis elementas gali tureti daugeli vaikiniu elementu.<br />
+          Vaikinis elementas, gali tureti tik viena tevini elementa.<br />
+        </p>
+      </section>
+      <section id="paveldejimas">
+        <h1>Paveldejimas</h1>
+        <p>
+          Paveldeti stilius gali tik vaikinius elementas is tevinio elemento.
+          Kiatip nebus.<br />
+          Paveldimi stiliai yra tie kurie keicia elemento isvaizda, ne busena.
+          Pvz.: color, font-size, font-family...<br />
+          Nepaveldimi stiliai yra tie, kurie keicia elemento busena. Pvz.:
+          width. height, display, border, postition...<br />
+          Net paveldeti stiliai, gali nebuti atvaizduoti del stiliu prioritetu.
+        </p>
+        <ul>
+          <li>labas</li>
+          <li>labas</li>
+          <li>
+            <ul>
+              <li>ate</li>
+              <li>ate</li>
+              <li>ate</li>
+            </ul>
+          </li>
+          <li>labas</li>
+        </ul>
+      </section>
+      <section id="defaultStyles">
+        <h1>Numatytieji stiliai</h1>
+        <h2>Numatytieji stiliai</h2>
+        <h3>Numatytieji stiliai</h3>
+        <p>
+          Numaytieji stiliai yra tag'ams automatiskai narsykles suteikti
+          stiliai. Tarp skirtingu narsykliu, nusmatytieji stiliai gali
+          minimalistiskai keistis ir sitaip sugadinti svetaines vaizda skirtingu
+          naryskliu vartotojams.<br />
+          Tam, kad nebutu problemu kuriant dizaina skirtingomis narsyklems yra
+          naudojami Reset arba Normalize CSS'ai.<br />
+          Reset - resetina visus stilius(istrina stilius).<br />
+          Normalize - suvienodina visus stilius tarp narsykliu ir panaikina dali
+          kenkejisku stiliu.
+        </p>
+      </section>
+      <section id="priorities">
+        <h1>CSS prioritetai</h1>
+        <ol>
+          <li>Inline Style - 1000</li>
+          <li>ID - 100</li>
+          <li>Class - 10</li>
+          <li>Element - 1</li>
+          <li>Css points(balai)</li>
+          <li>CSS Order(eiliskumas CSS kode)</li>
+          <li>Default styles</li>
+          <li>Inheritance(paveldejimas)</li>
+        </ol>
+        <a href="https://www.google.lt">Google</a>
+        <p>
+          Esant dviem selektoriams, kurie nusako to paties elemento vienodus
+          stilius yra atsizvelgiama i tu selektoriu prioritetus. Aukstesni bala
+          turintys prioritetai turi aukstesni prioriteta.<br />
+          Esant dviem vienodo visu prioritetu balo selektoriams, keiciant ta
+          pati elemento stiliu, yra atsizvelgiama i CSS eiliskuma. Kuris Css
+          stilius aprasytas veliau, tas ir bus priraikomas.
+        </p>
+        <p>
+          <span class="veryImportant"
+            >!important- Jeigu imanoma nenaudoti!!!</span
+          >
+          !important prierasas prie stiliaus ignoruoja visus prioritetus ir
+          suteikia ta stiliu ir niekas jo negali pakeisti, apart kito !important
+          prieraso, kuris turi aukstesni prioriteta css.
+        </p>
+      </section>
+      <section id="googleFonts">
+        <h1>
+          <a href="https://fonts.google.com/" target="blank">Google Fonts</a>
+        </h1>
+        <p>
+          Noredamas panaudoti kazkoki importuota srifta, turi ji susirasti
+          Google Fonts puslapyje, pasirinkti norima srifta ir jo stilius,
+          prisijungti pateikta koda prie savo kodo(import/link) ir tuomet
+          naudoti prisidetaji srifta.
+        </p>
+      </section>
+      <section id="icons">
+        <h1>Icons</h1>
+        <p>
+          Ikona yra mazas paveiksliukas. Zemiau pateiktos ikonu bibliotekos,
+          prgindines. Norint naudoti reikia tureti ju nuoroda(biblioteka).
+          <br />
+          Tam kad i puslapi ikelti ikonas reikia naudoti i arba span tag'a. Nes
+          ikonos neturi joms priskirto tag'o. i - suteiktti italic srifta, span
+          - isskirti, pastilizuoti.<br>
+          Ikonos stilizuojamos kaip tekstas, neprskiriami width/height, o priskiriame font-size. Nepriskiriame background-color, o priskiriame kaip color.
+        </p>
+        <h2>Font - Awesome</h2>
+        <a
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          >Biblioteka</a
+        >
+        <i class="fa fa-baterry-quarter"></i>
+        <span class="fa fa-500px"></span>
+        <span class="fa">&#xf270;</span>
+        <h2>GiphIcons (Bootstrap)</h2>
+        <a
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          >Biblioteka</a
+        >
+        <i class="glyphicon glyphicon-apple"></i>
+        <span class="glypicon glyphicon-cloud"></span>
+        <span class="fa">&#xe129;</span>
+        <h2>Google</h2>
+        <a href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          >Biblioteka</a
+        >
+        <i class="matiarial-icons">adb</i>
+        <span class="material-icons">adjust</span>
+        <span class="material-icons">&#</span>
+      </section>
+    </main>
+
+    <!--pabaiga-->
+  </body>
+</html>

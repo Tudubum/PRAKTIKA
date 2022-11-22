@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11 paskaita - Responsive Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="responsive">
+        <h1>Responsive Design</h1>
+        <p>
+          Responsive Design - gali reaguoti i vartotojo irengini ir/arba jo
+          ploti.
+        </p>
+        <p>
+          Esant skirtingiems ekranu dydziams - galima pritaikyti skirtingus
+          stilius naudojant @media query.
+        </p>
+      </section>
+      <section id="breakpoints">
+        <div id="devices">
+          <h1>Breakpoint devices</h1>
+          <ol>
+            <li>portrait phone</li>
+            <li>tablet / landscape phone</li>
+            <li>laptop</li>
+            <li>desktop</li>
+          </ol>
+        </div>
+        <div id="pixels">
+          <h1>Breakpoint with (px)</h1>
+          <ol>
+            <!--[&lt; -->
+            <li>&lt;500px</li>
+            <li>&lt;678px</li>
+            <li>&lt;992px</li>
+            <li>&lt;1200px</li>
+            <li>&lt;1400px</li>
+            <li>&gt;1400px</li>
+          </ol>
+        </div>
+      </section>
+      <section id="mobileFirst">
+        <h1>Mobile First</h1>
+        <ul>
+            <li>
+                Is mazesnio ekrano dydzio yra lengvesnis perejimas i didesni. (lengviau prideti naujo turinio, negu atimti sena)
+            </li>
+            <li> 
+                Didesne koncentracija i turini del mazo vietos kiekio.
+            </li>
+            <li>
+                Didesnis kiekis vartotoju naudoja mobiliasias aplikacijas.
+            </li>
+            <li>
+                Google paieskos algoritmas geriau ivertina Mobile First dizainu kurtas svetaines.
+            </li>
+        </ul>
+        <p>
+            Naudojant Mobile First dizono principa, pradedame nuo maziausio ekrano ir judame link didesniu.<br>, tam naudojame @media(min-width: __ px;).<br>
+            Naudojant @media(min-width: __px;) butinai judame nuo mazesniu i didesnius, nes kitaip neveiks.
+        </p>
+
+    </section>
+      <section id="task1">
+        <h1 class="name1">Desktop</h1>
+        <h1 class="name2">Tablet</h1>
+        <h1 class="name3">Mobile</h1>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+      <section id="uzduotis1">
+        <h1 class="name1">Desktop</h1>
+        <h1 class="name2">Tablet</h1>
+        <h1 class="name3">Mobile</h1>
+        <div>
+        <div class="gridContainer">
+          <div class="header">Header</div>
+          <div class="Menu">Menu</div>
+          <div class="Hero">Hero</div>
+          <div class="Main">Main</div>
+          <div class="Image">Image</div>
+          <div class="Extra">Extra</div>
+          <div class="Banner">Banner</div>
+        </div>
+      </section>
+     
+    </main>
+  </body>
+</html>
