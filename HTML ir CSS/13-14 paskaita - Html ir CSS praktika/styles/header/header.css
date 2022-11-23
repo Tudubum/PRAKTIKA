@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.navbar h1 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+.navbar span {
+  color: #645cff;
+}
+.navbar .fa {
+  background-color: #645cff;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+}
+.navbar .fa-facebook {
+  background-color: #645cff;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+}
+.navbar .fa-twitter {
+  color: #645cff;
+  background-color: white;
+  font-size: 18px;
+}/*# sourceMappingURL=header.css.map */
