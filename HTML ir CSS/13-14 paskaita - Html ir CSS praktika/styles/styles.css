@@ -1,2 +1,10 @@
 @import url(../styles/header/header.css);
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@import url(https://use.fontawesome.com/releases/v5.15.4/js/all.js);
+@import url(../styles/hero/hero.css);
+@import url(../styles/About/about.css);
+@import url(../styles/Service/service.css);
+@import url(../styles/Tours/tours.css);
+@import url(../styles/Gallery/gallery.css);
+@import url(../styles/Contact/contacts.css);
+@import url(../styles/Footer/footer.css);

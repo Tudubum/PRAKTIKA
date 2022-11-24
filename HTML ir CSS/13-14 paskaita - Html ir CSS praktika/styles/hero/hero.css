@@ -1,0 +1,63 @@
+#hero {
+  background-color: #645cff;
+  height: 100vh;
+  justify-content: center;
+  background-position: 50% 50%;
+  align-items: center;
+  position: relative;
+}
+#hero .herosection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 30px 180px 30px;
+  font-family: "Roboto", sans-serif;
+}
+#hero .herosection img {
+  display: none;
+}
+#hero .herosection h1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 10px;
+  line-height: 45px;
+}
+#hero .herosection p {
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+#hero .herosection button {
+  color: white;
+  padding: 10px;
+  background-color: #645cff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px #534dcd;
+  margin-top: 20px;
+}
+
+@media (min-width: 960px) {
+  #hero {
+    display: block;
+    background-image: url(https://images.unsplash.com/photo-1504280317859-9c6cce36bca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=786&q=80);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .herosection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(100, 92, 255, 0.7803921569), rgba(100, 92, 207, 0.1450980392));
+    height: 315px;
+    color: white;
+  }
+}/*# sourceMappingURL=hero.css.map */

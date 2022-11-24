@@ -1,0 +1,54 @@
+#About {
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 60px;
+}
+.AboutUs {
+  text-align: center;
+  h1 {
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+    line-height: 45px;
+    padding: 10px 0 10px 0;
+  }
+  span {
+    color: #645cff;
+  }
+}
+
+.text {
+  padding: 20px 20px 0 20px;
+  .responsive {
+    width: 92%;
+    height: auto;
+  }
+  h1 {
+    font-weight: 400;
+  }
+  p {
+    text-align: justify;
+    font-size: 14px;
+    color: hsl(222deg 47% 11%);
+  }
+}
+
+button {
+  color: #645cff;
+  padding: 10px 0 0 20px;
+  background-color: white;
+  border: none;
+}
+
+@media (min-width: 960px) {
+  .text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    .responsive {
+      width: 500px;
+      height: 300px;
+      margin-right: 20px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+#footer {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: hsl(0deg, 0%, 13%);
+  font-family: "Roboto", sans-serif;
+}
+#footer .menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+  color: white;
+}
+#footer .socialicons {
+  text-align: center;
+}
+#footer .fa {
+  background-color: #645cff;
+  padding: 5px;
+  font-size: 10px;
+  color: white;
+}
+#footer .fa-facebook {
+  background-color: #645cff;
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 50%;
+  color: hsl(0deg, 0%, 13%);
+}
+#footer .fa-twitter {
+  color: #645cff;
+  background-color: hsl(0deg, 0%, 13%);
+  font-size: 18px;
+}
+#footer .fa-linkedin {
+  color: hsl(0deg, 0%, 13%);
+}
+#footer .copyright {
+  padding-top: 20px;
+  color: white;
+}/*# sourceMappingURL=footer.css.map */

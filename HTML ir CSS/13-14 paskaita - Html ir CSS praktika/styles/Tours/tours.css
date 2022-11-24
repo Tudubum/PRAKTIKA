@@ -1,0 +1,68 @@
+#FeaturedTours {
+  font-family: "Roboto", sans-serif;
+}
+#FeaturedTours h1 {
+  text-align: center;
+  font-weight: 400;
+  font-size: 26px;
+  letter-spacing: 10px;
+  line-height: 36px;
+  padding: 10px 0 10px 0;
+  margin-top: 30px;
+}
+#FeaturedTours span {
+  color: #645cff;
+}
+#FeaturedTours .gallery-wrapper {
+  padding: 15px;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#FeaturedTours .gallery-wrapper .card-img h3 {
+  margin-top: 0;
+}
+#FeaturedTours .gallery-wrapper .card-img p {
+  position: absolute;
+  background-color: #645cff;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+#FeaturedTours .gallery-wrapper .gallery-card {
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0px 2px 3px #d6d6d6;
+}
+#FeaturedTours .gallery-wrapper .gallery-card .info {
+  display: flex;
+}
+#FeaturedTours .gallery-wrapper .gallery-card img {
+  text-align: center;
+  height: auto;
+  width: 100%;
+}
+#FeaturedTours .gallery-wrapper .gallery-card .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 960px) {
+  .tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .tours .gallery-card {
+    margin-left: 5px;
+    margin-right: 5px;
+    box-shadow: 0px 2px 3px #d6d6d6;
+  }
+  .tours .gallery-wrapper {
+    padding: 2px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=tours.css.map */

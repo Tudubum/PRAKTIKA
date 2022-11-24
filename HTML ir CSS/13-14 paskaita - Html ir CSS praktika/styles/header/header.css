@@ -3,6 +3,9 @@
   justify-content: space-between;
   padding: 15px;
 }
+.navbar .menu {
+  display: none;
+}
 .navbar h1 {
   color: black;
   font-family: "Roboto", sans-serif;
@@ -29,4 +32,21 @@
   color: #645cff;
   background-color: white;
   font-size: 18px;
+}
+
+@media (min-width: 960px) {
+  .navbar {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+  }
+  .navbar .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar .menu div {
+    padding: 15px;
+  }
+  .navbar .menu div:hover {
+    color: #645cff;
+  }
 }/*# sourceMappingURL=header.css.map */

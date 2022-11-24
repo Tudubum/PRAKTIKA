@@ -1,0 +1,57 @@
+.mainservice {
+  background-color: hsl(210deg 40% 98%);
+  font-family: "Roboto", sans-serif;
+  h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 10px;
+    line-height: 45px;
+    padding: 10px 0 10px 0;
+    margin-top: 30px;
+  }
+  span {
+    color: #645cff;
+  }
+}
+
+.OurService {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 20px 10px 20px;
+
+  .ServiceBox {
+    width: 45%;
+    height: auto;
+    text-align: center;
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      text-align: center;
+    }
+    .fa-solid {
+      padding: 10px;
+      background-color: #645cff;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .OurService {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    .ServiceBox {
+      height: 200px;
+      width: 300px;
+      text-align: center;
+    }
+  }
+}

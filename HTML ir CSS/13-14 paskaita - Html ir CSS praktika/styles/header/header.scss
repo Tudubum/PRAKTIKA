@@ -3,6 +3,10 @@
   justify-content: space-between;
   padding: 15px;
 
+  .menu {
+    display: none;
+  }
+
   h1 {
     color: black;
     font-family: "Roboto", sans-serif;
@@ -29,5 +33,23 @@
     color: #645cff;
     background-color: white;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 960px) {
+  .navbar {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        padding: 15px;
+      }
+      div:hover {
+        color: #645cff;
+      }
+    }
   }
 }

@@ -1,0 +1,45 @@
+#footer {
+  padding: 50px 20px 50px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: hsl(0deg 0% 13%);
+  font-family: "Roboto", sans-serif;
+  .menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    color: white;
+  }
+  .socialicons {
+    text-align: center;
+  }
+  .fa {
+    background-color: #645cff;
+    padding: 5px;
+    font-size: 10px;
+    color: white;
+  }
+  .fa-facebook {
+    background-color: #645cff;
+    padding: 5px 8px;
+    font-size: 14px;
+    border-radius: 50%;
+    color: hsl(0deg 0% 13%);
+  }
+  .fa-twitter {
+    color: #645cff;
+    background-color: hsl(0deg 0% 13%);
+    font-size: 18px;
+  }
+  .fa-linkedin {
+    color: hsl(0deg 0% 13%);
+  }
+  .copyright {
+    padding-top: 20px;
+    color: white;
+  }
+}

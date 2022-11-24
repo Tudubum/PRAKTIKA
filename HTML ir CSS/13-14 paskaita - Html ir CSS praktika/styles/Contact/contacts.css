@@ -1,0 +1,38 @@
+#Contacts {
+  background-color: #645cff;
+  color: white;
+  margin: 0;
+  text-align: center;
+  padding: 30px 20px 50px 20px;
+  font-family: "Roboto", sans-serif;
+}
+#Contacts h1 {
+  font-weight: 400;
+}
+#Contacts p {
+  font-weight: 400;
+  font-size: 16px;
+}
+#Contacts .customRadio {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 2px 10px 10px;
+  color: black;
+}
+#Contacts .customRadio input:checked + label {
+  background-color: hsl(120deg, 3%, 94%);
+  padding: 8px;
+  margin-right: 0;
+  font-size: 16px;
+  margin-left: 90px;
+}
+#Contacts .form input {
+  display: none;
+}
+#Contacts .form input label {
+  display: inline-block;
+  padding: 5px 100px;
+}
+#Contacts .form input .customRadio label:first-child(2) {
+  background-color: pink;
+}/*# sourceMappingURL=contacts.css.map */
