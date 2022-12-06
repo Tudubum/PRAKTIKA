@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20 paskaita - Event'ai ir DOM</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <script src="./script/main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="event">
+        <h1>Events</h1>
+        <p>
+          Ivykiai - puslapyje vykstantys kazkokie veiksmai/ ivykiai(peles
+          paspaudimas, klaviaturos paspaudimas, informacijos pazymejimas, scroll
+          i virsu, apacia, formos pateikimas, failo ikelimas, atsisiuntimas is
+          puslapio....).<br />
+          Noredami stebeti(klausyti) ar nutinka koks ivykis, turime pradzioje
+          nurodyti(selektinti) kurioje DOM dalyje tas ivykis gali nutikti.<br />
+          Nurodzius(selektinus), kurioje dalyje klausomes ivykio - reikia
+          aprasyti ivykio klausymasi. Tai padarome rasydami "addEventListener"
+          metoda, kuris priima 2 parametrus: koksIvykis(peles paspaudimasm
+          klaviaturos paspaudimas, peles uzejimas...), kaDarytiNutikusIvykiui.
+        </p>
+      </section>
+      <section id="DOM">
+        <h1>Document Object Model</h1>
+        <p>
+          Dokumentas - puslapis - kuriame yra visa vartotojui atvaizduojama
+          informacija(tekstas, paveiksliukas, forma, lentele...).<br />
+          Objektas - kazkoks puslapio elementas(nuo html tag'o, iki ikonos
+          tag'o)<br />
+          Modelis - objektu struktura kazkuriame elemente(tekstas,
+          paveiksliukas, forma, lentele...)
+        </p>
+        <p>
+          Noredami per JS selektinti kazkuria DOM dali, turime rasyti toki koda:
+          "document.querySelector" arba "document.querySelectorAll".
+          "QuerySelector" metodas priima 1 parametra - selekotriu(toki koki
+          raseme CSS'e).
+        </p>
+      </section>
+      <section id="tasks">
+        <div>
+          <h2>Jaukiu sv.Kaledu</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+            quibusdam doloribus, similique laboriosam voluptatibus autem
+            quisquam labore vero amet minus.
+          </p>
+          <h2>Linku svenciu</h2>
+          <img
+            src="https://joyofandroid.com/wp-content/uploads/2022/06/JOA-Image-Template-65.png"
+            width="500"
+            height="300"
+            alt=""
+          />
+          <h2>Laimingu Naujuju metu!</h2>
+          <button>GAUK DOVANU</button>
+        </div>
+      </section>
+      <section id="DOM_is_JS"></section>
+      <section id="calc">
+        <h1>Haha</h1>
+        <form id="skaic">
+          <input
+            type="number"
+            name="skaicius1"
+            id="skaicius1"
+            step="0.0000000001"
+          />
+          <select name="veiksmas" id="veiksmas">
+            <option value="sudetis">sudeti</option>
+            <option value="atimtis">atimti</option>
+            <option value="dauginimas">dauginti</option>
+            <option value="dalinimas">dalinti</option>
+            <option value="laipsnis">kelti laipsniu</option>
+            <option value="saknis">traukti šaknį</option>
+            <option value="liekana">rasti liekaną</option>
+          </select>
+          <input type="number" name="skaicius2" id="skaicius2" />
+          <input type="submit" value="skaičiuoti" step="0.0000000001" />
+        </form>
+        <div id="output"></div>
+      </section>
+    </main>
+  </body>
+</html>

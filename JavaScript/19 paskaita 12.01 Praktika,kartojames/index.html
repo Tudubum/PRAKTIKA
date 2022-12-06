@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19 paskaita - 12.01 praktika/kartojimasis</title>
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Kartojimas</h1>
+        <ol>
+          <li>
+            Kintamieji(what, why, scope(apimtis), type, assign(priskirti))
+            <ul>
+              <li>string - zodinis kintamasis rasomas kabutese ''/ "" / ``;</li>
+              <li>number - skaitinis kintamasis</li>
+              <li>boolean/bool - loginis kintamasis (true/false)</li>
+              <li>array - masyvas</li>
+              <li>object - objektas</li>
+              <p>
+                Objektas - Object - {raktas:reiksme, raktas1:reiksme1....}
+                Masyvas - Array - [reiksme, reiksme, reiksme...] Tiek objektas,
+                tiek masyvas yra konteineriniai kintamieji. Tai reiškia, kad jų
+                viduje galima talpinti keletą reiškmių (gali būti skirtingų
+                kitamųjų tipų).
+              </p>
+              <!--
+    MASYVU METODAI
+    pop()       -  isima is masyvo galo, modifikuoja
+    shift()     - isima is masyvo pradzios, modifikuoja
+    push()      - prideda prie masyvo galo, modifikuoja
+    unshift()   - prideda prie masyvo pradzios, modifikuoja
+    reverse()   - apsuka masyva. Ji modifikuoja.
+    slice(nr1,nr2)  - paima nuo nr1(imtinai) iki(neimtinai) nr2 masyvo elementus. NE MODIFIKUODAMAS MASYVO.
+    splice(nr1, nr2, nr3, nr4, nr5...) - nuo nr1 trina nr2 kieki elementu ir nr1 vietoje iterpia nr3, nr4, n5 ir t.t.. elementus. MODIFOKUOJA MASYVA.
+    arr1.concat(arr2.arr3.arr4...) - prie array1 masyvo prijungia arr2,arr3,arr4... masyvus. NEMODIFIKUOJA.
+    sort() - isrikiuoja masyva abeceles tvarka.
+    skaiciu problema sprendziame su function(a,b)(return a-b) ikelta i sort skliaustelius. Zodziu problema sprendziama su function (a,b) {return a.localComapre(b)} ikelta i sort skliaustelius.
+              -->
+            </ul>
+          </li>
+          <li>
+            Operatoriai(darbas su kintamaisiais)
+            <ul>
+              <li>sudetis, atimtis, daugyba, dalyba</li>
+              <li>
+                laipsnio kelimas(**), saknies traukimas(**), liekanos radimas(%)
+              </li>
+              <li>
+                lygu(==)(tik duomenys), lyyygu(===)(duomenys ir tipas), nelygu,
+                nelyyygu
+              </li>
+              <li>daugiau, maziau, daugiau arba lygu, maziau arba lygu</li>
+              <li>IR(&&), ARBA(||), NE(!)</li>
+              <li>
+                tipas (typeof)(ar tai string, number, boolean, object, function
+              </li>
+              <!--
+                        Assignment:
+
+    = --- lygybe
+
+
+            Shortcuts:
+
+    ++ --- didejimas vienetu(kazkas = kazkas + 1)
+    -- --- mazejimas vienetu(kazkas = kazkas - 1)
+    += --- pridejimas (kazkas = kazkas + kazkiek)
+    -= --- atemimas (kazkas = kazkas - kazkiek)
+    *= --- dauginimas (kazkas = kazkas *= kazkiek)
+    /= --- dalinimas (kazkas = kazkas /= kazkiek)
+    %= --- liekanos radimas (kazkas = kazkas %= kazkiek)
+    **= --- laipsnio kelimas / saknies traukimas
+
+            Palyginimo(comparison) operatoriai:
+
+    ==    --- ar lygu duomenys?
+    ===   --- ar lygu duomenys ir tipas?
+    !==   --- daugiau negu
+    >     --- daugiau negu
+    <     --- maziau negu
+    >=    --- daugiau arba lygu
+    <=    --- maziau arba lygu
+
+            Loginiai(logical) operatoriai:
+
+    !  --- ne(apvercia reiksme) (NOT)
+    && --- ir                   (AND)
+    || --- arba                 (OR)
+
+    Tipo(Type) operatoriai:
+
+    typeof     --- tikrina tipa
+              -->
+            </ul>
+          </li>
+          <li>
+            Salygos
+            <ul>
+              <li>if elseIf... else</li>
+              <li>switch case..</li>
+              <li>truthy/falsy</li>
+              <li class="notNow">ternary - trumpintos salygos</li>
+              <li class="notNow">AND</li>
+              <p>
+                If Else if - pradine salyga else if - papildoma salyga, kuri
+                tikrinama jeigu anksciau esanti/cios salyga/os grazino false.
+                else if... else - vykdomas jeigu visos auksciau esancios salygos
+                grazino false. Nesting Salygos viduje, rasoma kita salyga.
+                Truthy ir Falsy truthy - true | not 0 number | 'string' |
+                array/masyvas| objektas | funkcija falsy - false | 0 | '' (empty
+                string) | undefined | null | Nan Ternary (max trumpintas if
+                else) salyga ? jeiguTiesa : jeiguMelas - if else OR / AND -
+                galimas if salygų trumpinimas
+              </p>
+            </ul>
+          </li>
+          <li>
+            Ciklai
+            <ul>
+              <li>for - jos viduje apsirasai salyga, kitima.</li>
+              <li>while - tik salyga, nera iteracijos</li>
+              <li class="notImportant">do while</li>
+              <li class="notImportant">for in - suka cikla per masyva</li>
+              <li class="notImportant">for of - suka cikla per objekta</li>
+              <li class="notNow">array iteration methods</li>
+            </ul>
+          </li>
+          <li>
+            Funkcijos
+            <ul>
+              <li>
+                funkcijos deklaravimas(zodzio function panaudojimas, tuomet
+                funcijos varda susigalvoji ir skliausteliuose nurodai
+                parametruose)
+              </li>
+              <li>
+                parametrai/argumentai(iskvieti funcija pagal nurodyta parametra)
+              </li>
+              <li>grazinimas (return)</li>
+              <li class="notImportant">lamba</li>
+              <li class="notImportant">bevardes</li>
+              <p>
+                Funkcija - veiksmu seka, kuri yra vykdoma tik tuomet, kai i ta
+                funkcija yra kreipiamasi. Parametrai/Argumentai - duomenys,
+                perduodami funkcijai jos iskvietimo metu, su kuriais funkcijos
+                viduje bus atliekami kazkokie veiksmai. Return - grazina
+                atsakyma
+              </p>
+            </ul>
+          </li>
+          <li class="notNow">
+            Methods
+            <ul>
+              <li>Math</li>
+              <li>string</li>
+              <li>array</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <h1>Papildomas darbas</h1>
+      <ul>
+        <li>
+          <a href="https://www.w3resource.com/javascript/javascript.php"
+            >W3Resource</a
+          >
+        </li>
+        <li><a href="https://edabit.com/tutorial/javascript">Edabit</a></li>
+        <li><a href="https://www.codewars.com/">CodeWars</a></li>
+      </ul>
+    </main>
+  </body>
+</html>
