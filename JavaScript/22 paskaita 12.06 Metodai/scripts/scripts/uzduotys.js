@@ -19,6 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 */
 
 // TASK 1
+//Sukurk variable 'milkPrice'. Su JS patikrink ir informuok vartotoją console() ar jam reikės centų, ar nereikės (t.y. ar skaičius sveikas).
 
 let milkPrice = 2.37;
 if (Number.isInteger(milkPrice)) {
@@ -28,6 +29,7 @@ if (Number.isInteger(milkPrice)) {
 }
 
 // TASK 2
+// Pakoreguok pirmą pratimą, kad console taip pat ir išmestų kainą - su dviem skaičias po kablelio (t.y. 3.00 Eur).
 
 let milkPrice2 = 3;
 if (Number.isInteger(milkPrice2)) {
@@ -39,14 +41,46 @@ console.log(milkPrice2.toFixed(2));
 
 // TASK 3
 
-document.querySelector("form").addEventListener("submit", (event) => {
-  event.DefaultPrevented();
-  let kaina = Number(document.getElementById("kaina").value);
-  let kiekis = Number(document.getElementById("kiekis").value);
+document.querySelector('#task3').addEventListener("submit", (e) => {
+e.preventDefault();
+let kaina = Number(document.getElementById('kaina').value);
+let kiekis = Number(document.getElementById('kiekis').value);
 
-  let total = kaina * kiekis;
+let total = kaina * kiekis;
 
-  let kainaDisplay = document.createElement("h1");
-  kainaDisplay.numberContent = total.toFixed(2);
-  document.body.append(kainaDisplay);
+const suma = document.createElement("h1");
+suma.textContent = total.toFixed(2);
+document.querySelector("#task3").append(suma);
+
+ });
+
+// TASK STRING
+// TASK 1
+//Sukurk du input'us - vieną, kur vartotojas įves savo vardą; kitą - skaičių. Pirma, patikrink ar skaičius sveikas (jei ne - console). Jei sveikas, po apačia sukurk h1 elementą, kur vardas bus atkartotas tiek kartų, kiek skaičius nurodo.
+
+document.querySelector('#String_task1').addEventListener('submit', (e) => {
+  e.preventDefault();
+  let name = document.getElementById("name").value;
+  let number = Number(document.getElementById("number").value);
+  if (Number.isInteger(number)) {
+    let h1 = document.createElement("h1");
+    h1.textContent = name.repeat(number);
+    document.querySelector("#String_task1").append(h1);
+  } else {
+    console.log("Ivestas skaicius yra ne sveikas skaitmuo");
+  }
 });
+
+
+
+// string task 4
+
+function fullNameSplit(fullName){
+  console.log(fullName.indexOf(' '));
+  let firstSpace = fullName.indexOf(' ');
+  let name1 = fullName.slice(0, firstSpace);
+  let name2 = fullName.slice(firstSpace+1);
+  console.log(name1+'-----'+name2);
+}
+
+let kaGaunam = fullNameSplit("Rokas Banaitis treciasis")

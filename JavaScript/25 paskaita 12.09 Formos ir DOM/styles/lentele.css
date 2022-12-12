@@ -1,0 +1,37 @@
+/* TASK 2 - LENTELE */
+
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  #task2_LENTELE form {
+    margin: 0 auto;
+    background-color: blanchedalmond;
+    width: 500px;
+    display: flex;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+
+  #task2_LENTELE div{
+    padding: 15px;
+  }
+  
+  #task2_LENTELE .submit{
+    background-color: rgb(250, 157, 157);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 25px;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+tbody{
+    background-color:  rgb(247, 195, 195);  
+}
