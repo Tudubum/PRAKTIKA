@@ -1,0 +1,22 @@
+.FavoriteSelect{
+    background-color: rgb(189, 189, 189);
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+table,th,tr,td{
+    border: 1px solid rgb(0, 0, 0);
+}
+table th{
+    background-color: bisque;
+}
+
+table{
+    margin-top: 20px;
+    width: 400px;
+    text-align: center;
+}
+

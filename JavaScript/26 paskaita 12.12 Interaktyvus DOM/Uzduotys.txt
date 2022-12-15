@@ -1,0 +1,9 @@
+// Kebabines maisto uzrsakymo uzduotis:
+1) Susikurti duomenu faila.
+2) Susikurti forma, kurioje gali pasirinkti 1 patiekala.
+3) Pateikus forma, apacioje atvaizduojama saskaita.
+4+)Patobulinti forma, kad butu galima pasirinkti patiekalo kieki. Pakoreguoti saskaita, kad tvarkingai veiktu su ivairiais kiekiais patieklu.
+5+++) Patobulinti forma, kad butu galima pasirinkti daugiau nei 1 patiekala.  Pakoreguoti saskaita, kad tvarkingai veiktu su daugiau nei 1 patiekalu.
+6+) Galimybe patobulinti dorma, kad butu galimybe atmesti nenorima pasirinkimo varianta (netycia pridejai, nebenori).
+7) Viska graziai stilizuoti.
+8) Sukurti vizualu meniu(kazka panasaus i images/meniu.PNG).
