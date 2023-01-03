@@ -3,7 +3,7 @@
 /*
     Klase yra objektu kurimo sablonas.
     Klase privalo buti aprasyta pries i ja kreipiantis.
-    Klasiu pavadinimai rasomi is DIDZIUJU raidziu.
+    Klasiu pavadinimai rasomi is Didziosios raides.
     Klases konstruktoriuje "this" yra privalomas.
 */
 

@@ -1,0 +1,125 @@
+body {
+    background-color: #000000;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #addMovieForm{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .form {
+    margin-bottom: 30px;
+   
+  }
+  
+  .cardForm{
+    width: 200px;
+    height: 30px;
+  }
+  
+  label {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    
+  }
+
+  .form input{
+    display: flex;
+    margin-right: 10px;
+    justify-content: center;
+    height: 30px;
+  }
+  
+  #movies {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+  
+  }
+  
+  #movies .card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 2px solid black;
+  }
+  
+  #movies .card img {
+    width: 230px;
+    height: 300px
+  }
+  
+  .card{
+    display: flex;
+    margin: 5px;
+}
+  
+  .card-body {
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: center;
+    background-color: white;
+    width: 205px;
+    color: black;
+    padding: 0 0 5px 0;
+    border-radius: 0 10px 10px 0;
+  }
+  
+  .insideCardBtn .btn_delete {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .insideCardBtn{
+    margin-top: 60px
+  }
+  .btn_edit {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+  
+  .btnAddMovie {
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 5px;
+  }
+
+  .btnAddMovie:hover{
+    background-color: darkgreen;
+  }
+  .btn_delete:hover {
+    background-color: #bd2130;
+    border-color: #b21f2d;
+  }
+  
+  .btn_edit:hover {
+    background-color: #e0a800;
+    border-color: #d39e00;
+  }
+  
+  
+
+  
+

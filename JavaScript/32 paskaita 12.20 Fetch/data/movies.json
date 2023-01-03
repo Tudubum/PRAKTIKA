@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Black Adam",
+        "poster": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ7z46quZTThLvU4GVoaKuD0at1K9oUCdnI8C4O8lwm6F1KpYFt",
+        "length": 125,
+        "actors": ["Dwayne Johnson", "Pierce Brosnan"]
+}, {
+        "name": "Avatar: The Way of Water",
+        "poster": "https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/228780/AVATAR_RERLS_1SHT_DIGITAL_sRGB_V7.jpg",
+         "length": 192,
+         "actors": ["Kate Winslet", "Sam Worthington"]
+}, {
+        "name":  "The Conjuring",
+         "poster": "https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_.jpg",
+         "length": 112,
+         "acrors": ["Vera Farmiga", "Patrick Wilson"]
+}, {
+        "name": "X-Men",
+        "poster": "https://m.media-amazon.com/images/M/MV5BZmIyMDk5NGYtYjQ5NS00ZWQxLTg2YzQtZDk1ZmM4ZDBlN2E3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg" ,
+        "length": 104,
+        "actors": ["Hugh Jackman", "Patrick Stewart"]
+}
+]
+

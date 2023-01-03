@@ -168,7 +168,7 @@ let mixedArray2 = ["Hallo", 42, true,"labas", "world", "Penktadienis"];
 
 let stringasPrasidedaDidziaja = (mixedArray2, didziojiRaide) => {
   for ( i = 0; i < masyvas.length; i ++){
-    if (typeof(mixedArray2[i]) === 'string' && mixedArray2.charAt(0) === mixedArray2.toLowerCase);{
+    if (typeof(mixedArray2[i]) === 'string' && mixedArray2.charAt(0) === mixedArray2.toLowerCase());{
       stringasPrasidedaDidziaja.push(masyvas[i]);
        } 
     console.log(stringasPrasidedaDidziaja)

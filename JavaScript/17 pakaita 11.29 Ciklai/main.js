@@ -252,6 +252,10 @@ for (let i = 0; i < masyvas.length; i++) {
 }
 
 // 1 uzduotis 1.1
+// 1) Susikurti kintamuosius su reikšmingais pavadinimais ir informacija.
+// 1.1) 5 string.
+// 1.2) 5 int.
+// 1.3) 3 bool.
 
 let vardas = "Agne";
 let amzius = 35;
@@ -281,6 +285,9 @@ let ArTuriAugintini4 = true;
 console.log("Agne");
 
 // 2 uzduotis
+// 2) Susikurti konteinerius ir juos užpildyti reikšmėmis (bent po 1 kiekvieno tipo).
+  // 2.1) Masyvas bent 6 ilgio. []
+  // 2.2) Objektas bent 6 ilgio. {}
 // objektas
 let seimosNarys3 = {
   vardas: "Ruta",
@@ -336,6 +343,12 @@ let seimosNarysX = {
 console.log(masyvas2_3[0], masyvas2_3[1], masyvas2_3[3][1]);*/
 
 // 5 uzduotis
+// 5) Parašyti if'ą, kuris tikrintų kokia tavo lytis (tikrinimas turi vykti iš object kintamojo (object kintamasis turi turėti bent 4 kintamuosiuos savo viduje)).
+//Naudoti:
+  //1) let/const - kurti kintamuosius (objektą/us)
+  //optional) prompt - vartotojas priskirtų objektui reikšmes
+  //2) alert/console.log - grąžintų atsakymus.
+  //3) if/elseIf/else - kas be ko... (arrrrrrrrrba ternary)
 
 let apieMane = {
   manoVardas: "Giedre",
@@ -373,5 +386,36 @@ if (apieMane.manoLytis == "moteris") {
 
   // 9) Parašyti ciklą, kuris iš masyvo išspausdintų tik elementus, kurių reikšmė didesnė negu 54.
 
+  console.groupCollapsed('Task 9')
+
+for (let i = 0; i <= skaiciuMasyvas - 1; i++) {
+  if (skaiciuMasyvas[i] > 54){
+    console.log(skaiciuMasyvas[i]);
+  }
+}
+console.groupEnd();
+
   // 10) Parašyti ciklą, kuris iš masyvo išspausdintų tik lyginius/nelyginius skaičius. (2ciklai)
+
+  console.groupCollapsed('task10 Lyginiai')
+
+  let skaiciuMasyvas5 = [];
+  let i = 0;
+  while ( i <= 100 ) {
+    skaiciuMasyvas5.push(Math.floor(Math.random()*101));
+   console.log(i);
+   i = i + 2;
+  }
+  console.groupEnd();
+
+  // Nelyginiai
+console.groupCollapsed('task10 Nelyginiai')
+for (let i = 1; i < 100; i += 1) {
+  if (i % 2 !== 0) {
+    console.log(i);
+  }
+}
+console.groupEnd();
+
+
 }

@@ -1,0 +1,55 @@
+.container{
+    margin: 20px;
+}
+
+#addApartmentForm{
+    border: 1px solid black ;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#addApartmentForm input{
+    margin: 10px;
+    width: 300px;
+    align-items: center;
+}
+
+
+.apartments{
+    display: flex;
+}
+.apartment {
+    display: flex;
+    margin-bottom: 20px;
+    width: 50%;
+  }
+
+  .apartment img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .apartment .info {
+    margin-left: 20px;
+  }
+
+  .apartment .info p {
+    margin: 0;
+  }
+
+  .apartment .info p:first-child {
+    font-weight: bold;
+  }
+
+  .apartment .info p:nth-child(2) {
+    color: red;
+  }
+
+  .apartment .info p:nth-child(3) {
+    color: green;
+  }
+
+  

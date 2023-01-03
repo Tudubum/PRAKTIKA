@@ -1,4 +1,7 @@
-//import Heading from './Heading.js';
+
+//import H, { helloWorld, notMorningPerson as noMorning } from './Heading.js';
+//import T from './Table.js';
+
 //              KOMPONENTAI
 
 //      UL/OL - task1
@@ -217,8 +220,72 @@ class Table {               // sukuriame klase Table
   document.querySelector('body').append(table);
 }
 
-//              MODULIAI
+
+// ROKO TABLE
+/*
 {
+
+export default class Table{
+  constructor(props){
+    this.props = props;
+    return this.render();
+  }
+
+  render = () =>{
+    this.htmlElement = document.createElement(`table`);
+    if(this.props.tableAttributes){
+      Object.keys(this.props.tableAttributes).forEach(raktas => {
+        this.htmlElement.setAttribute(raktas, this.props.tableAttributes[raktas]);
+      });
+    }
+
+    this.tableHead = document.createElement('thead');
+    this.tableRow = document.createElement('tr');
+    Object.keys(this.props.tableData[0]).forEach(th => {
+      this.th = document.createElement('th');
+      this.text = document.createTextNode(th);
+      this.th.append(this.text);
+      this.tableRow.append(this.th);
+    });
+    this.tableHead.append(this.tableRow);
+
+    this.tableBody = document.createElement('tbody');
+    this.props.tableData.forEach(row => {
+      this.tableRow = document.createElement('tr');
+      for(const td in row){ // galima buvo daryti su Object.keys(row)
+        this.td = document.createElement('td');
+        this.text = document.createTextNode(row[td]);
+        this.td.append(this.text);
+        this.tableRow.append(this.td);
+      }
+      this.tableBody.append(this.tableRow);
+    });
+
+    this.htmlElement.append(this.tableHead, this.tableBody);
+    return this.htmlElement;
+  }
+}
+
+// let table = new Table({
+//   tableAttributes:{
+
+//   },
+//   tableData : [{
+//     vardas: "Rokas",
+//     pavarde: "Banaitis",
+//     amzius: 26
+//   }, {
+//     vardas: "Rokas2",
+//     pavarde: "Banaitis2",
+//     amzius: 27
+//   }]
+// });
+}
+
+*/
+
+
+//              MODULIAI
 /*
   Kitų JS failų importavimas ir naudojimas
     import ka from 'isKur'; - faile kuriame norime naudoti importus (main.js)
@@ -228,39 +295,52 @@ class Table {               // sukuriame klase Table
     export default - numatytasis eksportas, kurį priimsi rašydamas - import anyNameIWant from 'exportFile.js'. Vardas, kurį nurodai neprivalo sutapti su export default vardu esančiu exportFile.js. Visviena bus eksportuojamas vienas vienintelis elementas, kuris turi default prierašą.
     export - paprastas eksporas, kurį'iuos priimsi rašydamas - import { exportedName, exportedName2 } from 'exportFile.js'. Priimsi būtent tuos elementus, kurių vardus parašei ir kurie yra paprasti export'ai. Priimti paprastus eksportus galima kokiais tik nori pavadinimais naudojant "as" prierašą: import { exportedName as pirmas, exportedName2 as antras } from 'exportFile.js'.
 */
+
 let antraste = new H({
-    dydis:'5',
-    tekstas:'Labas rytas',
-    atributai: {
-      style: 'font-size: 50px'
-    }
-  });
-  console.log(antraste);
-  
-  helloWorld();
-  noMorning();
+  dydis:'5',
+  tekstas:'Labas rytas',
+  atributai: {
+    style: 'font-size: 50px'
   }
-  //              Duomenų saugojimas vartotojo dalyje
-  {
-  //  cookie
-  document.cookie = `vardas=kazkoks; expires=${new Date('2022 12 17')}`;
-  document.cookie = `kitas=kazkoks; expires=${new Date('2022 12 17')}`;
-  document.cookie = `vardas=kitoks; expires=${new Date('2022 12 17')}`;
-  
-  // session storage
-  document.querySelector('body').addEventListener('click', () => {
-    sessionStorage.setItem('vardas', 'Rokas');
-    sessionStorage.setItem('pavarde', 'Banaitis');
-    sessionStorage.setItem('lvlOfTired', '30');
-  });
-  // local storage
-  document.querySelector('body').addEventListener('click', () => {
-    localStorage.setItem('vardas', 'Rokas');
-    localStorage.setItem('pavarde', 'Banaitis');
-  
-    // localStorage.clear(); // išvalo visą storage
-    console.log(localStorage.key(0));
-    console.log(localStorage.getItem(localStorage.key(0)));
-    localStorage.removeItem(localStorage.key(0));
-  });
-}
+});
+// console.log(antraste);
+
+helloWorld();
+noMorning();
+
+//              Duomenų saugojimas vartotojo dalyje
+//  cookie
+document.cookie = `vardas=kazkoks; expires=${new Date('2022 12 17')}`;
+document.cookie = `kitas=kazkoks; expires=${new Date('2022 12 17')}`;
+document.cookie = `vardas=kitoks; expires=${new Date('2022 12 17')}`;
+
+// session storage
+document.querySelector('body').addEventListener('click', () => {
+  sessionStorage.setItem('vardas', 'Rokas');
+  sessionStorage.setItem('pavarde', 'Banaitis');
+  sessionStorage.setItem('lvlOfTired', '30');
+});
+// local storage
+document.querySelector('body').addEventListener('click', () => {
+  localStorage.setItem('vardas', 'Rokas');
+  localStorage.setItem('pavarde', 'Banaitis');
+  localStorage.setItem('pomegiai', ['game','sport','tv']);
+  let data = {
+    planeta: "Žemė",
+    zemynas: "Europa",
+    salis: "Lietuva"
+  }
+  console.log(data);
+  console.log(JSON.stringify(data));
+
+  localStorage.setItem('gyvenamojiVieta', JSON.stringify(data));
+
+
+  // localStorage.clear(); // išvalo visą storage
+  // console.log(localStorage.key(0));
+  // console.log(localStorage.getItem(localStorage.key(0)));
+  // localStorage.removeItem(localStorage.key(0));
+});
+
+// JSON.stringify(object) -> paverčia objektą į string'ą
+// JSON.parse(stringifiedObject) -> paverčia string'ą į objektą

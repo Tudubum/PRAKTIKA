@@ -66,7 +66,8 @@ function liekanosRadimas(skaicius1, skaicius2) {
   }
 }
 
-// uzduotis 2
+// uzduotis 2 
+//  Sukurti funkciją, kuri į konsolę išvestų visus jai duotojo masyvo elementus nuo pirmo iki paskutinio.
 
 function firstToLast(array) {
   for (let element of array) {
@@ -81,6 +82,8 @@ function firstToLast(array) {
 }
 */
 // uzduotis 3
+// Sukurti funkciją, kuri į konsolę išvestų visus jai duotojo masyvo elementus nuo paskutinio iki pirmojo.
+
 
 function lastToFirst(array) {
   for (let i = array.length - 1; i >= 0; i--) {
@@ -216,6 +219,7 @@ let abecele = [
 //extra2) Sukurti funkciją, kuri randa visus pirminius skaičius iki nurodyto parametro.
 
 // ROKO ATSAKYMAI
+
 // 1
 function sudetis(nr1, nr2) {
   if (typeof nr1 === "number" && typeof nr2 === "number") {
